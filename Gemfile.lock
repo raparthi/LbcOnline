@@ -76,6 +76,11 @@ GEM
       thor (>= 0.13.6)
     haml (4.1.0.beta.1)
       tilt
+    haml-rails (0.5.3)
+      actionpack (>= 4.0.1)
+      activesupport (>= 4.0.1)
+      haml (>= 3.1, < 5.0)
+      railties (>= 4.0.1)
     hike (1.2.3)
     hpricot (0.8.6)
     html2haml (1.0.1)
@@ -222,6 +227,8 @@ DEPENDENCIES
   factory_girl_rails
   faker
   foreman
+  haml
+  haml-rails
   html2haml
   jbuilder (~> 2.0)
   jquery-rails

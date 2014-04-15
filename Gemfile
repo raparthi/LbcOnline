@@ -24,6 +24,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 group :development do
   gem 'spring'
+  gem 'haml'
+  gem 'haml-rails'
   gem 'debugger'
   gem 'rails_best_practices'
   gem 'looksee'
