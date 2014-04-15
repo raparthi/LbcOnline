@@ -7,4 +7,9 @@ class ApplicationController < ActionController::Base
   def home
 
   end
+
+  def after_sign_in_path_for(resource)
+    new_admission_path
+  end
+
 end
