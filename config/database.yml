@@ -13,3 +13,10 @@ test:
   database: db/test.sqlite3
   pool: 5
   timeout: 5000
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: lbconline_production
+  pool: 5
+  password:
