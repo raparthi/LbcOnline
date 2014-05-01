@@ -1,5 +1,18 @@
-= simple_form_for(:admission) do |f|
-  = f.input :name
-  = f.input :dob
-  = f.submit
+.col-md-2.sidebar
+  = render 'side_bar'
+.col-md-10
+
+  = simple_form_for(Admission.new) do |f|
+    = f.input :name
+    = f.input :dob
+    = f.input :father_name
+    = f.input :mother_name
+    = f.input :father_occupation
+    = f.input :mother_occupation
+    = f.input :category
+    telephone No
+    = f.input :residence_number
+    = f.input :personal_number
+    = f.input :income_per_annum
+    = f.submit
 

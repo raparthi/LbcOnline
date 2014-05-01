@@ -6,4 +6,20 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    = yield
+    .container
+      .navbar.navbar-inverse
+        .navbar-brand
+          LBC Online
+
+          - flash.each do |name, msg|
+            = content_tag :div, msg, class: name
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            = link_to "Admission", admissions_path
+          %li
+            = link_to "Attendence", "#"
+          %li
+            = link_to "Progress", "#"
+
+      = yield
+

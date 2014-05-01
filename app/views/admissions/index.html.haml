@@ -1,0 +1,8 @@
+.col-md-2.sidebar
+  = render 'side_bar'
+.col-md-10
+  - @admissions.each  do |admission|
+    = admission.id
+    = admission.name
+
+
