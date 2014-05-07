@@ -3,6 +3,7 @@
 .col-md-10
 
   = simple_form_for(Admission.new) do |f|
+    personal information
     = f.input :name
     = f.input :dob
     = f.input :father_name
@@ -10,9 +11,16 @@
     = f.input :father_occupation
     = f.input :mother_occupation
     = f.input :category
-    telephone No
+    contact information
     = f.input :residence_number
     = f.input :personal_number
     = f.input :income_per_annum
+    admission type
+    = f.input :klass, label: "Class"
+    = f.label "Pick Group"
+    = f.collection_select :group, Group.all, :id, :name
+    = f.input :group
+    = f.label "Pick Section"
+    = f.collection_select :section, Section.all, :id, :name
+    = f.input :medium
     = f.submit
-
